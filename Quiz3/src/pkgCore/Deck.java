@@ -43,11 +43,19 @@ public class Deck {
 		for (int i = 0; i < 52; i++) {
 			Card c5 = d3.Draw();
 		}
+		
 		System.out.println("NUMBER OF CARDS: " + d3.getiDeckCount());
 		System.out.println("NEW TWOS: " + d3.getRemaining(pkgEnum.eRank.TWO));
 		System.out.println("NEW NINES: " + d3.getRemaining(pkgEnum.eRank.NINE));
 		System.out.println("NEW CLUBS: " + d3.getRemaining(pkgEnum.eSuit.CLUBS));
 		System.out.println("NEW DIAMONDS: " + d3.getRemaining(pkgEnum.eSuit.DIAMONDS));
+		
+		ArrayList<Integer> ai = new ArrayList<Integer>();
+		ai.add(1);
+		ai.add(2);
+		for (int a : ai) {
+			ai.add(5);
+		}
 	}
 		
 	private ArrayList<Card> cardsInDeck = new ArrayList<Card>();
